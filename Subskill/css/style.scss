@@ -1,0 +1,649 @@
+@font-face {
+  font-family: poppinsSB;
+  src: url(../assets/TYPOGRAPHIES/Poppins/Poppins-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppinsB;
+  src: url(../assets/TYPOGRAPHIES/Poppins/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: mulish;
+  src: url(../assets/TYPOGRAPHIES/muli/Muli.ttf);
+}
+@font-face {
+  font-family: mulishSB;
+  src: url(../assets/TYPOGRAPHIES/muli/Muli-SemiBold.ttf);
+}
+@font-face {
+  font-family: poppins;
+  src: url(../assets/TYPOGRAPHIES/Poppins/Poppins-Regular.ttf);
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.open-nav {
+  transform: translateX(0);
+}
+body,
+h1,
+h3,
+p {
+  margin: 0;
+}
+header {
+  display: flex;
+  height: 115px;
+  font-family: poppinsSB;
+  > * {
+    margin: auto 50px;
+  }
+  nav {
+    display: flex;
+    margin-right: 50px;
+    align-items: center;
+  }
+  ul {
+    display: flex;
+    list-style-type: none;
+    margin-right: 20px;
+    li {
+      margin: 0 15px;
+    }
+  }
+  #burgerMenu {
+    display: none;
+  }
+}
+.refregiratedVehicule {
+  display: flex;
+  height: 500px;
+  position: relative;
+  .content {
+    background-color: #039f4e;
+    width: 55%;
+    height: fill;
+    color: white;
+    padding: 100px 0px 100px 50px;
+    clip-path: polygon(0 0, 0 100%, 80% 100%, 100% 0);
+    > * {
+      margin-right: 230px;
+    }
+    h3 {
+      font-family: poppinsB;
+      font-size: 48px;
+      line-height: 60px;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    p {
+      font-family: mulish;
+      font-size: 18px;
+      margin-top: 15px;
+      margin-bottom: 0px;
+      //margin-right:250px;
+    }
+    button {
+      font-family: mulishSB;
+      font-size: 18px;
+      height: 56px;
+      width: 306px;
+      cursor: pointer;
+      margin-top: 40px;
+    }
+  }
+  img {
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    width: 60%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .diagonal1 {
+    margin-left: -60px;
+    border-left: 15px solid #039f4e;
+    height: 100%;
+    transform: skew(-18.5deg);
+  }
+  .diagonal2 {
+    margin-left: 25px;
+    border-left: 7px solid #039f4e;
+    height: 100%;
+    transform: skewX(-18.5deg);
+  }
+}
+#ourVehicules {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 100px 165px;
+  h1 {
+    font-family: poppinsB;
+    font-size: 40px;
+  }
+  .break {
+    width: 100%;
+  }
+  .card {
+    height: 220px;
+    width: 305px;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    .top {
+      position: relative;
+      background-color: #039f4e;
+      width: 100%;
+      height: 137px;
+      border-radius: 10px 10px 0 0;
+      img {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    span {
+      white-space: normal;
+      word-wrap: break-word;
+      display: flex;
+      width: 100%;
+      height: 87px;
+      font-family: poppinsB;
+      font-size: 20px;
+      margin-left: 20px;
+      border-radius: 0 0 10px 10px;
+      align-items: center;
+    }
+  }
+}
+#transportSociety {
+  display: flex;
+  .left {
+    width: 50%;
+    margin-left: 50px;
+    margin-right: 40px;
+    h3 {
+      font-family: poppinsB;
+      color: #039f4e;
+      font-size: 20px;
+    }
+    .top {
+      h1 {
+        font-family: poppinsB;
+        font-size: 40px;
+        margin-bottom: 15px;
+      }
+
+      p {
+        font-family: mulish;
+        font-size: 16px;
+        margin-top: 15px;
+        margin-right: 155px;
+      }
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin-top: 80px;
+      h3 {
+        grid-column: span 3;
+      }
+      .numbers {
+        margin-top: 20px;
+        .number {
+          font-family: mulish;
+          font-size: 25px;
+        }
+        .subject {
+          font-family: mulish;
+          font-size: 16px;
+          margin-top: 5px;
+        }
+      }
+    }
+  }
+  img {
+    margin-right: 50px;
+    height: 600px;
+    width: 40%;
+    object-fit: contain;
+  }
+}
+#refregirationSpe {
+  margin-top: 100px;
+  .titles {
+    text-align: center;
+    h3 {
+      font-family: poppinsB;
+      font-size: 20px;
+      color: #039f4e;
+    }
+    h1 {
+      font-family: poppinsB;
+      font-size: 40px;
+      margin-bottom: 70px;
+    }
+  }
+  .content {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    margin-right: 155px;
+    margin-left: 155px;
+    h3 {
+      font-family: poppinsB;
+      font-size: 18px;
+    }
+    p {
+      font-family: mulish;
+      font-size: 15px;
+      margin-top: 5px;
+      margin-bottom: 100px;
+    }
+    .left {
+      text-align: right;
+    }
+    .right {
+      text-align: left;
+    }
+    .center {
+      grid-column-start: 2;
+      text-align: center;
+      margin-top: -50px;
+    }
+    img {
+      grid-row: span 2;
+    }
+  }
+}
+#fullService {
+  background-color: #039f4e;
+  display: flex;
+  position: relative;
+  height: auto;
+  margin-top: 100px;
+  .content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    color: white;
+    margin-right: 125px;
+    margin-left: 625px;
+
+    h1 {
+      grid-column: span 2;
+      font-family: poppinsB;
+      font-size: 40px;
+      margin-top: 50px;
+      margin-bottom: 25px;
+    }
+    h3 {
+      font-family: poppinsB;
+      font-size: 20px;
+    }
+    p {
+      font-family: mulish;
+      font-size: 16px;
+      margin-right: 40px;
+      margin-bottom: 30px;
+    }
+    button {
+      font-family: mulishSB;
+      font-size: 18px;
+      height: 56px;
+      width: 306px;
+      cursor: pointer;
+      margin-top: 20px;
+      margin-bottom: 50px;
+    }
+  }
+  img {
+    position: absolute;
+    bottom: 0;
+  }
+}
+.contactUs {
+  display: flex;
+  margin-top: 50px;
+  .contact {
+    margin-left: 50px;
+    margin-right: 150px;
+  }
+  h1 {
+    font-family: poppinsB;
+    font-size: 40px;
+    margin-bottom: 40px;
+  }
+  h3 {
+    margin-top: 40px;
+    font-family: poppinsB;
+    font-size: 20px;
+  }
+  .infos {
+    margin-top: 15px;
+    font-family: mulish;
+    font-size: 18px;
+  }
+  form {
+    .userDetails {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin-right: 125px;
+      .inputBox {
+        margin-right: 40px;
+        margin-bottom: 25px;
+        label {
+          font-family: poppinsB;
+          font-size: 18px;
+        }
+
+        input,
+        select,
+        textarea {
+          border: 0;
+          outline: 0;
+          background: transparent;
+          border-bottom: 1px solid #a5a5a5;
+          width: 100%;
+          font-family: mulish;
+          accent-color: black;
+        }
+        #receiveMail {
+          width: auto;
+          margin: 0;
+        }
+        label[for="receiveMail"] {
+          font-family: mulish;
+          font-size: 14px;
+        }
+        .radioChoices {
+          input {
+            width: auto;
+            margin: 0;
+          }
+          label {
+            font-family: mulish;
+            font-size: 15px;
+            margin-right: 40px;
+          }
+        }
+      }
+      input[type="submit"] {
+        width: 307px;
+        height: 56px;
+        color: white;
+        background-color: #039f4e;
+        border: 0;
+        font-family: mulishSB;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      input[type="submit"]:hover {
+        background-color: #037238;
+      }
+      .span2 {
+        grid-column: span 2;
+      }
+    }
+  }
+}
+#agencies {
+  margin-top: 100px;
+  position: relative;
+  #map {
+    width: 100%;
+    height: 650px;
+    z-index: 0;
+  }
+  .infos {
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: white;
+    z-index: 100;
+    .agency {
+      border: 1px solid #ececec;
+      padding-left: 25px;
+      padding-bottom: 25px;
+      position: relative;
+      h1 {
+        margin-top: 25px;
+        margin-bottom: 10px;
+        font-family: poppinsB;
+        font-size: 20px;
+      }
+      h3 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-family: poppinsB;
+        font-size: 16px;
+      }
+      p {
+        font-family: mulish;
+        font-size: 15px;
+        padding-right: 90px;
+      }
+      img {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .agency:hover {
+      background-color: #f3f3f3;
+    }
+  }
+}
+.footer {
+  font-family: poppins;
+  .confidentalityPolicy {
+    padding-top: 50px;
+    position: relative;
+    img {
+      position: absolute;
+      left: 70px;
+      height: 94px;
+    }
+    .text {
+      margin-left: 280px;
+      margin-right: 50px;
+      font-size: 12px;
+      margin-bottom: 50px;
+    }
+  }
+  .bottom {
+    display: flex;
+    color: white;
+    background-color: black;
+    align-items: center;
+    height: 90px;
+    p {
+      margin-left: 50px;
+      font-size: 16px;
+    }
+  }
+}
+@media only screen and (max-width: 1280px) {
+  .refregiratedVehicule .diagonal1,
+  .refregiratedVehicule .diagonal2 {
+    transform: skew(-16.5deg);
+  }
+  #refregirationSpe {
+    .content {
+      margin-right: 100px;
+      margin-left: 100px;
+      .right {
+        grid-column-start: 3;
+      }
+      .center {
+        grid-row-start: 2;
+        margin: 20px 30px 0 30px;
+      }
+      img {
+        grid-row: span 1;
+      }
+    }
+  }
+  #fullService {
+    margin-top: 50px;
+    .content {
+      margin-left: 600px;
+      margin-right: 100px;
+    }
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .refregiratedVehicule {
+    height: auto;
+    .content {
+      width: 100%;
+      //height: auto;
+      padding: 50px;
+      clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 0);
+      p {
+        margin-right: auto;
+      }
+    }
+    .diagonal1,
+    .diagonal2 {
+      display: none;
+    }
+    img {
+      display: none;
+    }
+  }
+  #ourVehicules {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #transportSociety {
+    .left {
+      .stats {
+        position: absolute;
+        right: 50px;
+        margin-top: -300px;
+        width: 40%;
+      }
+    }
+    img {
+      align-items: flex-start;
+      height: 50%;
+      object-fit: cover;
+    }
+  }
+  #refregirationSpe {
+    .content {
+      .left {
+        text-align: left;
+      }
+    }
+  }
+  #fullService {
+    margin-top: 0;
+    .content {
+      margin-left: 50px;
+      margin-right: 50px;
+      grid-template-columns: repeat(3, 1fr);
+      h1 {
+        grid-column: span 3;
+      }
+    }
+    img {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 768px) {
+  header {
+    width: 100%;
+    #burgerMenu {
+      display: block;
+      justify-content: flex-end;
+    }
+    nav {
+      position: fixed;
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 50%;
+      z-index: 2;
+    }
+  }
+  #ourVehicules {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
+  #transportSociety {
+    img {
+      display: none;
+    }
+    .left {
+      width: 100%;
+      .top {
+        p {
+          margin-right: 50px;
+        }
+      }
+      .stats {
+        position: unset;
+        margin-top: 30px;
+        width: 100%;
+      }
+    }
+  }
+  #refregirationSpe {
+    .titles {
+      h1 {
+        margin-bottom: 25px;
+      }
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 50px 50px 0 50px;
+      .left {
+        grid-column-start: unset;
+      }
+      .center {
+        text-align: left;
+        grid-column-start: unset;
+        grid-row-start: unset;
+        margin: 0;
+      }
+      .right {
+        grid-column-start: unset;
+      }
+      p {
+        margin-bottom: 25px;
+      }
+
+      img {
+        display: none;
+      }
+    }
+  }
+  #fullService {
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  .contactUs {
+    display: unset;
+    form {
+      margin-left: 50px;
+      margin-top: 30px;
+    }
+  }
+  #agencies {
+    #map {
+      display: none;
+    }
+    .infos {
+      position: unset;
+    }
+  }
+}
